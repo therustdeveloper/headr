@@ -77,4 +77,3 @@ fn open(filename: &str) -> Result<Box<dyn BufRead>> {
         _ => Ok(Box::new(BufReader::new(File::open(filename)?))),
     }
 }
-
